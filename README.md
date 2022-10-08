@@ -77,10 +77,10 @@ When user login sucessfully, a unique accessToken will be returned.
 ## User Auth
 
 
-| APIs                                 | Method |         Desc          |
-| ------------------ -------------     | :----: | :-------------------: |
-| http://localhost:4000/api/v1/register|  POST  | Register user account |
-| http://localhost:4000/api/v1/login   |  POST  | User Login            |
+| APIs                                  | Method |         Desc          |
+|-------------------------------------- |--------|---------------------- |
+| http://localhost:4000/api/v1/register |  POST  | Register user account |
+| http://localhost:4000/api/v1/login    |  POST  | User Login            |
 
 ## Transaction route
 
