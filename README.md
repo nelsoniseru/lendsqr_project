@@ -102,7 +102,7 @@ When user login sucessfully, a unique accessToken will be returned.
 
 ## Transaction model
 | Field           | Type   | 
-| --------------- | ------ |
+|-----------------|--------|
 | email           | string |
 | user_id         | int    | 
 | amount          | int    | 
