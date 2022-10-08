@@ -109,7 +109,7 @@ When user login sucessfully, a unique accessToken will be returned.
 | status          | string | 
 
 ## E-R Model
-> click [here](https://app.dbdesigner.net/designer/schema/564966).
+> click here to see the E-R model [here](https://app.dbdesigner.net/designer/schema/564966).
 
 
 
