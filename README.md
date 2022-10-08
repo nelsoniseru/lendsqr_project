@@ -94,21 +94,25 @@ When user login sucessfully, a unique accessToken will be returned.
 # Models
 ## User model
 | Field           | Type   | 
-| --------------- | ------ |
+|-----------------|--------|
+| id              | int    |
 | email           | string |
 | password        | string | 
 | wallet_balance  | int    |  
 
 
 ## Transaction model
+
 | Field           | Type   | 
 |-----------------|--------|
+| id              | int    |
 | email           | string |
 | user_id         | int    | 
 | amount          | int    | 
 | status          | string | 
 
 ## E-R Model
+
 > click here to see the E-R model [here](https://app.dbdesigner.net/designer/schema/564966).
 
 
