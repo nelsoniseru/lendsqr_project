@@ -17,7 +17,7 @@ This is a Lendsqr node.js typescript express based RESTful Api Project.
 ## 1. Clone Project into your local machine
 
 ```
-git clone git@github.com:nelsoniseru/technical-challenge.git
+https://github.com/nelsoniseru/lendsqr_project.git
 ```
 
 
