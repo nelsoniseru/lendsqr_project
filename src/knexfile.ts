@@ -1,12 +1,14 @@
+import config from "./utils/default"
+
 module.exports = {
   
     development: {
-      client: 'mysql',
+      client:config.client,
       connection  : {
-        database  : 'lendsqr',
-        user      : 'root',
-        password  : '',
-        port:3306
+        database  : config.database,
+        user      : config.user,
+        password  : config.password,
+        port: config.port
       },
       migrations: {
         tableName: "knex_migrations",
