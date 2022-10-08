@@ -13,10 +13,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.encryptpass = exports.comparePass = exports.createUser = exports.findExistingUser = void 0;
-const knexfile_conig_1 = require("../../database/knexfile.conig");
+const knexfile_config_1 = require("../../database/knexfile.config");
 const bcrypt_1 = __importDefault(require("bcrypt"));
 const saltRounds = 10;
-const User = () => (0, knexfile_conig_1.connection)('users');
+const User = () => (0, knexfile_config_1.connection)('users');
 function findExistingUser(email) {
     return __awaiter(this, void 0, void 0, function* () {
         const existingUser = yield User().where('email', email);

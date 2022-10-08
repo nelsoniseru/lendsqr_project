@@ -7,7 +7,7 @@ import {
   CREATE_ACCT_MSG,
   FIELD_ERROR_MSG,
   SERVER_ERROR_MSG
-} from "../constant"
+} from "../utils/constant"
 import {accessToken} from '../middleware/jwt_helper'
 import encryptpass from '../middleware/encryptpassword'
 import comparePass from '../middleware/passwordCompare'

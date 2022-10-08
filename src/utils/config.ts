@@ -2,7 +2,12 @@ import {Error} from "./error"
 import cors  from 'cors';
 import {Request, Response, NextFunction} from "express"
 import express from "express"
-import { SERVER_OK_HTTP_CODE,  NOT_FOUND_MESSAGE,SERVER_INTERNAL_ERROR_HTTP_CODE } from "./constant"
+import { 
+  SERVER_OK_HTTP_CODE,
+  NOT_FOUND_MESSAGE,
+  SERVER_INTERNAL_ERROR_HTTP_CODE
+   } 
+from "./constant"
 
 
 class AppConfig {
@@ -24,7 +29,6 @@ class AppConfig {
 
 
   loadAppLevelConfig() {
-
     this.app.use(
       express.json(),
     );

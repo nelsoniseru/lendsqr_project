@@ -1,4 +1,4 @@
-import { connection } from '../database/knexfile.conig';
+import { connection } from '../database/knexfile.config';
 const User = () => connection('users')
 class Module{
 async emailModule(email:string){

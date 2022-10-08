@@ -1,4 +1,4 @@
-import { connection } from '../../database/knexfile.conig';
+import { connection } from '../../database/knexfile.config';
 import bcrypt from "bcrypt";
 const saltRounds = 10;
 const User = () => connection('users')

@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express"
 import jsonwebtoken from 'jsonwebtoken';
 const {sign, verify } = jsonwebtoken;
-import config from '../default'
+import config from '../utils/default'
 
 export async function authorized(req: Request, res: Response, next: NextFunction){
     if(!req.headers['authorization']) return res.status(401).json({"msg":"unauthorized"})

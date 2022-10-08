@@ -13,7 +13,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.transactionService = void 0;
-const constant_1 = require("../constant");
+const constant_1 = require("../utils/constant");
 const transaction_module_1 = __importDefault(require("./transaction.module"));
 var module = new transaction_module_1.default();
 class transactionService {

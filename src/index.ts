@@ -1,7 +1,7 @@
 import express  from 'express'
 import {Transaction} from './transaction/transaction.controller'
 import {User} from './user/user.controller'
-import {AppConfig} from './config'
+import {AppConfig} from './utils/config'
 
 class App {
  private app: any;

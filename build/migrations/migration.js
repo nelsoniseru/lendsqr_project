@@ -31,6 +31,7 @@ function up(knex) {
     });
 }
 exports.up = up;
+//https://app.dbdesigner.net/designer/schema/564966
 function down(knex) {
     return __awaiter(this, void 0, void 0, function* () {
         return knex.schema.dropTable('users').dropTable('transaction');

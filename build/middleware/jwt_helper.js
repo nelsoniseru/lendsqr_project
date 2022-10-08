@@ -15,7 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.accessToken = exports.authorized = void 0;
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const { sign, verify } = jsonwebtoken_1.default;
-const default_1 = __importDefault(require("../default"));
+const default_1 = __importDefault(require("../utils/default"));
 function authorized(req, res, next) {
     return __awaiter(this, void 0, void 0, function* () {
         if (!req.headers['authorization'])

@@ -7,7 +7,7 @@ exports.App = void 0;
 const express_1 = __importDefault(require("express"));
 const transaction_controller_1 = require("./transaction/transaction.controller");
 const user_controller_1 = require("./user/user.controller");
-const config_1 = require("./config");
+const config_1 = require("./utils/config");
 class App {
     constructor() {
         this.app = (0, express_1.default)();

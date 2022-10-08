@@ -3,7 +3,7 @@ import {
    SERVER_OK_HTTP_CODE,  
    SERVER_BAD_REQUEST_ERROR_HTTP_CODE,
    SERVER_ERROR_MSG 
-} from "../constant"
+} from "../utils/constant"
 import Module from './transaction.module'
 
 var module = new Module()

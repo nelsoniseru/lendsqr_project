@@ -9,8 +9,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const knexfile_conig_1 = require("../database/knexfile.conig");
-const User = () => (0, knexfile_conig_1.connection)('users');
+const knexfile_config_1 = require("../database/knexfile.config");
+const User = () => (0, knexfile_config_1.connection)('users');
 class Module {
     emailModule(email) {
         return __awaiter(this, void 0, void 0, function* () {
