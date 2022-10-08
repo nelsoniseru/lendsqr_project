@@ -110,9 +110,5 @@ When user login sucessfully, a unique accessToken will be returned.
 
 
 
-NODEJS BACKEND DEVELOPER
-NAME: NELSON ISERU,
-JOB-TYPE: BACKEND ENGINEER,
-EMAIL: nelsoniseru08@gmail.com
 
 
