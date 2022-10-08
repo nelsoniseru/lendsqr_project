@@ -19,7 +19,7 @@ export async function up(knex: Knex) {
         table.dateTime('updated_at')
       })
 }
-
+//https://app.dbdesigner.net/designer/schema/564966
 export async function down(knex: Knex) {
     return knex.schema.dropTable('users').dropTable('transaction')
 }

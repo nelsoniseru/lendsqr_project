@@ -108,7 +108,8 @@ When user login sucessfully, a unique accessToken will be returned.
 | amount          | int    | 
 | status          | string | 
 
-
+## E-R Model
+> click [here](https://app.dbdesigner.net/designer/schema/564966).
 
 
 
