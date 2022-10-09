@@ -5,7 +5,7 @@ module.exports = {
     development: {
       client:config.client,
       connection  : {
-        server:config.server,
+        
         database  : config.database,
         user      : config.user,
         password  : config.password,
