@@ -4,7 +4,6 @@ const saltRounds = 10;
 const User = () => connection('users')
 
 export async function findExistingUser(email:any){
-    console.log(email)
     const existingUser = await User().where('email', email)
     return existingUser 
 }
