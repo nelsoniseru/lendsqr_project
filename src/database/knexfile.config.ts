@@ -14,6 +14,4 @@
             useNullAsDefault: true
         });
 
-      
-    console.log(connection)
   export  {connection};
