@@ -5,6 +5,7 @@
   var connection = knex({
           client:config.client,
           connection  : {
+            host:config.server,
             database  : config.database,
             user      : config.user,
             password  : config.password,

@@ -5,11 +5,12 @@ module.exports = {
     development: {
       client:config.client,
       connection  : {
-        
+        host:config.server,
         database  : config.database,
         user      : config.user,
         password  : config.password,
-        port: config.port
+        port: config.port,
+          charset: 'utf8'
       },
       migrations: {
         tableName: "knex_migrations",
