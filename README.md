@@ -31,7 +31,8 @@ start your mysql server
 
 > For more details about Mysql, click [here](https://mysql.com).
 
-### And then running the command
+### And then run the command
+> To migrate the tables into the database.
 
 ```
  npm run knex:migration
@@ -85,11 +86,10 @@ When user login sucessfully, a unique accessToken will be returned.
 ## Transaction route
 
 | APIs                                            | Method | Desc                        | AccessToken |
-| ----------------------------------------------- | ------ |------------------------     | ------------|
-| /api/subscribe/create-subscription              | POST   | Create a new subscription   | Required    |
-| /api/subscribe/cancel-subscription              | DELETE |  Cancel a subscription      | Required    |
-| /api/subscribe/get-subscription/:subcriptionid  | GET    | Get a subscription by ID    | Required    |
-| /api/subscribe/get-subscriptions                | GET    | Get all subscriptions       | Required    |
+| ----------------------------------------------- | ------ |-----------------------------|-------------|
+| http://localhost:4000/api/v1/fund-account       | POST   | fund user account           | Required    |
+| http://localhost:4000/api/v1/transfer           | POST   |  transfer to another user   | Required    |
+| http://localhost:4000/api/v1/withdraw           | POST   | withdraw from account       | Required    |
 
 # Models
 ## User model
