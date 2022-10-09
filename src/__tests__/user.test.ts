@@ -3,17 +3,16 @@ import express from 'express'
 var app = express();
 import {accessToken} from '../middleware/jwt_helper'
 
+import { connection } from '../database/knexfile.config';
 
 import {findExistingUser, createUser,encryptpass,comparePass} from './service/user.service'
 
 
 const userInput = {
-    id:1,
     email:"nelsoniseru08@gmail.com",
     password:"nelsoniseru@2022"
 }
 const userInput2 = {
-    id:2,
     email:"nelsoniseru02@gmail.com",
     password:"nelsoniseru@2022"
 }
@@ -76,7 +75,7 @@ describe('user login',()=>{
      describe("given that the password does not match",()=>{
         it('should return a 400 ',async()=>{
             let user = await findExistingUser(userInput.email)
-                       await  comparePass("nelsoniser",user[0].password) 
+                      // await  comparePass("nelsoniser",user[0].password) 
             supertest(app)
            .post("/api/v1/login")
            .expect(400)
@@ -86,7 +85,7 @@ describe('user login',()=>{
      describe("login user",()=>{
         describe("given the email and password are valid",()=>{
         it('should return a signed accessToken and login the user',async()=>{
-            let id = userInput['id']
+            let id = userInput
              let jwt = await accessToken(id)
       
          supertest(app)

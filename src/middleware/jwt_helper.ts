@@ -22,7 +22,7 @@ export async function authorized(req: Request, res: Response, next: NextFunction
    
 }
 
-export async function accessToken(id:number){
+export async function accessToken(id:any){
     var secret = config.secret
     var exp = config.exp
     const token = sign({ id },

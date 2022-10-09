@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Lendsqr project",
   "main": "index.js",
+
   "scripts": {
     "test": "jest",
     "start": "node ./build/server.js",
@@ -13,6 +14,8 @@
   "author": "Iseru  Nelson",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.3",
     "@types/bcrypt": "^5.0.0",
     "@types/config": "^3.3.0",
     "@types/cors": "^2.8.12",
@@ -21,6 +24,7 @@
     "@types/jsonwebtoken": "^8.5.9",
     "@types/node": "^18.8.2",
     "@types/supertest": "^2.0.12",
+    "babel-jest": "^29.1.2",
     "bcrypt": "^5.0.1",
     "config": "^3.3.8",
     "cors": "^2.8.5",
