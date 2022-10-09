@@ -5,6 +5,6 @@ export default{
     client:"mysql",
     port:19235,
     database:'lendsqr',
-    user : 'lendsqr',
-    password : 'nelsoniseru',
+    user :'lendsqr',
+    password :'nelsoniseru',
 }

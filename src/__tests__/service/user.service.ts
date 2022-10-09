@@ -10,7 +10,7 @@ export async function findExistingUser(email:any){
 
 export async function createUser(payload:any){
    
-    let user = await User().insert({email:payload.email, password:payload.password, created_at: new Date().toISOString(), updated_at: new Date().toISOString()})
+    let user = await User().insert({email:payload.email, password:payload.password, created_at:new Date(Date.now()), updated_at:new Date(Date.now())})
     return user
 }
 

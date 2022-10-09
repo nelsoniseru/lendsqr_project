@@ -10,7 +10,7 @@ async idModule(id:number){
 }
 async createUser(body:any,hashpass:string){
     const {email} = body
-    return  await User().insert({ email, password: hashpass, created_at: new Date().toISOString(), updated_at: new Date().toISOString() });
+    return  await User().insert({ email, password: hashpass, created_at: new Date(Date.now()), updated_at: new Date(Date.now()) });
   
 }
 

@@ -33,7 +33,7 @@ class userService {
       if (insertedRows) return res.status(SERVER_OK_HTTP_CODE).json({ message: `${email} ${CREATE_ACCT_MSG}` });
 
     } catch (error) {
-
+      console.log(error)
       res.status(SERVER_BAD_REQUEST_ERROR_HTTP_CODE).json({ statuscode: SERVER_BAD_REQUEST_ERROR_HTTP_CODE, message:SERVER_ERROR_MSG});
 
     }

@@ -9,9 +9,11 @@
             database  : config.database,
             user      : config.user,
             password  : config.password,
-            port: config.port
+            port: config.port,
+              charset: 'utf8'
           },
             useNullAsDefault: true
         });
+        
 
   export  {connection};

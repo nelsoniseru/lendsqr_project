@@ -17,8 +17,10 @@ async transactionModule(id:number,amount:any,status:string){
         status,
         amount,
         user_id:userAccount[0].id,
-        created_at: new Date().toISOString(), 
-        updated_at:new Date().toISOString()
+        created_at: new Date(Date.now()), 
+        updated_at:new Date(Date.now())
+        
+        
     })
   
 
