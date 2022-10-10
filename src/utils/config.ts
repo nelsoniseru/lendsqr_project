@@ -4,6 +4,7 @@ import {Request, Response, NextFunction} from "express"
 import express from "express"
 import { 
   SERVER_OK_HTTP_CODE,
+  SERVER_BAD_REQUEST_ERROR_HTTP_CODE,
   NOT_FOUND_MESSAGE,
   SERVER_INTERNAL_ERROR_HTTP_CODE
    } 
@@ -20,7 +21,7 @@ class AppConfig {
 
   loadAppLevelErrorConfig() {
     this.app.use((req:Request, res:Response, next:NextFunction) => {
-      const error = new Error( SERVER_OK_HTTP_CODE, req.path + " " +  NOT_FOUND_MESSAGE)
+      const error = new Error( SERVER_BAD_REQUEST_ERROR_HTTP_CODE , req.path + " " +  NOT_FOUND_MESSAGE)
       res.status(error.statusCode || SERVER_INTERNAL_ERROR_HTTP_CODE)
       res.json({ status: error.statusCode || SERVER_INTERNAL_ERROR_HTTP_CODE, message: error.message })
     })
